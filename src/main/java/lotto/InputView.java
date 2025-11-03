@@ -18,7 +18,7 @@ public class InputView {
     }
 
     //보너스 번호 입력
-    public static String readBonusNumbers(){
+    public static String readBonusNumber(){
         System.out.println("\n보너스 번호를 입력해 주세요.");
         return Console.readLine().trim();
     }
@@ -32,7 +32,7 @@ public class InputView {
             }
             return amount;
         } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("[ERROR 숫자를 입력해야 합니다");
+            throw new IllegalArgumentException("[ERROR] 숫자를 입력해야 합니다");
         }
     }
 }
